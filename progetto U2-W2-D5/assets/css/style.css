@@ -1,0 +1,836 @@
+/* ----------------------- GLOBAL SETTINGS ----------------------- */
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    font-family: "Spectral", serif;
+}
+
+article {
+    padding: 0 50px 10px 50px;
+}
+
+/* RESPONSIVE TABLET */
+@media screen and (min-width: 900px) {
+
+    /* ----------------------- NAV BAR SETTINGS ----------------------- */
+
+    .nav-bar {
+        background-color: #ffc017;
+        display: flex;
+        padding: 10px 50px 10px 50px;
+        border-bottom: 1px solid black;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* NAV BAR */
+    nav ol {
+        display: flex;
+        list-style-type: none;
+        font-size: 13px;
+    }
+
+    /* DISTANZA INTERNA NAV BAR */
+    nav li {
+        padding: 10px;
+    }
+
+    /* NAVIGARE TRA LE PAGINE EFFETTO */
+    nav li:hover {
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    /* ----------------------- HEAD SETTINGS ----------------------- */
+    .head {
+        background-color: #ffc017;
+        border-bottom: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        margin-bottom: 25px;
+    }
+
+    /* CONTENITORE PRINCIPALE */
+    .left {
+        padding-left: 50px;
+    }
+
+    /* TITOLO PAGINA */
+    h1 {
+        font-size: 80px;
+        letter-spacing: -6px;
+        padding-bottom: 20px;
+        font-weight: 400;
+    }
+
+    /* IMMAGINE SVG HEADING */
+    .svg-head {
+        position: relative;
+        left: 10px;
+    }
+
+    /* SOTTOTITOLO */
+    .left p {
+        font-size: 20px;
+        word-wrap: break-word;
+        font-family: "Roboto", sans-serif;
+        width: 65%;
+        padding-bottom: 50px;
+    }
+
+    /* BOTTONE HEAD */
+    .left button {
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+        padding: 6px 23px;
+        border: none;
+    }
+
+    /* ----------------------- MAIN SETTINGS ----------------------- */
+    article p {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 9px;
+        font-weight: 500;
+        word-break: break-word;
+    }
+
+    article svg {
+        padding-right: 5px;
+    }
+
+    /* ARTICOLI */
+    /* prendo un articolo e lo formo esteticamente da fuori */
+    .article {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding-top: 5px;
+        width: 30%;
+    }
+
+    /* formatto il testo dentro */
+    /* numero bianco grigio articolo */
+    .number {
+        color: grey;
+        opacity: 0.4;
+        font-size: 20px;
+        padding-right: 10px;
+        font-weight: bold;
+    }
+
+    /* contenuto di testo articolo */
+    .content p {
+        padding-bottom: 7px;
+        padding-left: 5px;
+    }
+
+    /* logo piccolo articolo */
+    .content p img {
+        border-radius: 20px;
+        height: 15px;
+        padding-right: 5px;
+    }
+
+    /* scritta in grassetto articolo */
+    .content p:nth-child(2) {
+        font-weight: bold;
+        font-size: 10px;
+    }
+
+    /* data articolo */
+    .content p:nth-child(3) {
+        color: grey;
+    }
+
+    /* FORMATTAZIONE DISPOSIZIONE ARTICLE */
+    .articoli-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    /* FORMATTAZIONE DEL CONTENUTO PAGINA */
+    hr {
+        opacity: 0.2;
+        padding-bottom: 10px;
+    }
+
+    /* ----------------------- ARTICOLI SOTTO ----------------------- */
+    .read-more {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .content-read-more {
+        display: flex;
+        flex-direction: row;
+        word-wrap: break-word;
+        justify-content: space-between;
+        padding-bottom: 25px;
+        padding-left: 50px;
+        width: 55%;
+    }
+
+    /* logo autore */
+    .content-read-more img:nth-child(1) {
+        width: 15px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+    }
+
+    /* nome autore */
+    .content-read-more p:nth-child(1) {
+        padding-bottom: 3px;
+    }
+
+    /* immagine copertina */
+    .anteprima-articolo {
+        width: 30%;
+        padding-left: 20px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    /* titolo articolo */
+    .content-read-more p:nth-child(2) {
+        font-size: 13px;
+        font-weight: bold;
+        padding-bottom: 5px;
+    }
+
+    /* testo articolo */
+    .content-read-more p:nth-child(3) {
+        color: grey;
+        font-weight: 300;
+        padding-bottom: 10px;
+        line-height: 11px;
+        font-size: 10px;
+    }
+
+    /* data articolo */
+    .content-read-more p:nth-child(4) {
+        color: grey;
+        font-weight: 350;
+        font-size: 8px;
+        display: flex;
+    }
+
+    /* categoria articolo */
+    .content-read-more span:nth-child(1) {
+        background-color: rgba(215, 215, 215, 0.556);
+        padding: 5px 5px;
+        border-radius: 8px;
+        width: fit-content;
+    }
+
+    /* icona "salva" */
+    #test {
+        align-self: flex-end;
+    }
+
+    /* contenuto testo articolo */
+    .content-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ----------------------- ASIDE ----------------------- */
+    button {
+        background-color: white;
+        border: 1px solid rgba(145, 145, 145, 0.765);
+        color: rgb(151, 150, 150);
+        padding: 6px 8px;
+        margin: 5px 5px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .aside {
+        width: 40%;
+        margin: 0 80px;
+    }
+
+    .aside ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+        list-style-type: none;
+        color: lightgray;
+        margin-bottom: 20px;
+    }
+}
+
+/* RESPONSIVE TABLET */
+
+@media screen and (min-width: 500px) {
+    .nav-bar {
+        background-color: #ffc017;
+        display: flex;
+        padding: 10px 50px 10px 50px;
+        border-bottom: 1px solid black;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* NAV BAR */
+    nav ol {
+        display: flex;
+        list-style-type: none;
+        font-size: 9px;
+    }
+
+    /* DISTANZA INTERNA NAV BAR */
+    nav li {
+        padding: 5px;
+    }
+
+    /* NAVIGARE TRA LE PAGINE EFFETTO */
+    nav li:hover {
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    /* ----------------------- HEAD SETTINGS ----------------------- */
+    .head {
+        background-color: #ffc017;
+        border-bottom: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        margin-bottom: 25px;
+    }
+
+    /* CONTENITORE PRINCIPALE */
+    .left {
+        padding-left: 50px;
+    }
+
+    /* TITOLO PAGINA */
+    h1 {
+        padding-top: 50px;
+        font-size: 38px;
+        letter-spacing: -1px;
+        padding-bottom: 20px;
+        font-weight: 400;
+    }
+
+    /* IMMAGINE SVG HEADING */
+    .svg-head {
+        position: relative;
+        left: 10px;
+    }
+
+    /* SOTTOTITOLO */
+    .left p {
+        font-size: 15px;
+        word-wrap: break-word;
+        font-family: "Roboto", sans-serif;
+        padding-bottom: 10px;
+    }
+
+    /* BOTTONE HEAD */
+    .left button {
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+        padding: 6px 23px;
+        margin-bottom: 30px;
+        border: none;
+    }
+
+    /* ----------------------- MAIN SETTINGS ----------------------- */
+    article p {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 9px;
+        font-weight: 500;
+        word-break: break-word;
+    }
+
+    article svg {
+        padding-right: 5px;
+    }
+
+    /* ARTICOLI */
+    /* prendo un articolo e lo formo esteticamente da fuori */
+    .article {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding-top: 5px;
+        width: 30%;
+    }
+
+    /* formatto il testo dentro */
+    /* numero bianco grigio articolo */
+    .number {
+        color: grey;
+        opacity: 0.4;
+        font-size: 20px;
+        padding-right: 10px;
+        font-weight: bold;
+    }
+
+    /* contenuto di testo articolo */
+    .content p {
+        padding-bottom: 7px;
+        padding-left: 5px;
+    }
+
+    /* logo piccolo articolo */
+    .content p img {
+        border-radius: 20px;
+        height: 15px;
+        padding-right: 5px;
+    }
+
+    /* scritta in grassetto articolo */
+    .content p:nth-child(2) {
+        font-weight: bold;
+        font-size: 10px;
+    }
+
+    /* data articolo */
+    .content p:nth-child(3) {
+        color: grey;
+    }
+
+    /* FORMATTAZIONE DISPOSIZIONE ARTICLE */
+    .articoli-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    /* FORMATTAZIONE DEL CONTENUTO PAGINA */
+    hr {
+        opacity: 0.2;
+        padding-bottom: 10px;
+    }
+
+    /* ----------------------- ARTICOLI SOTTO ----------------------- */
+    .read-more {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .content-read-more {
+        display: flex;
+        flex-direction: row;
+        word-wrap: break-word;
+        justify-content: space-between;
+        padding-bottom: 25px;
+        padding-left: 15px;
+        width: 95%;
+    }
+
+    /* logo autore */
+    .content-read-more img:nth-child(1) {
+        width: 15px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+    }
+
+    /* nome autore */
+    .content-read-more p:nth-child(1) {
+        padding-bottom: 3px;
+    }
+
+    /* immagine copertina */
+    .anteprima-articolo {
+        width: 30%;
+        padding-left: 20px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    /* titolo articolo */
+    .content-read-more p:nth-child(2) {
+        font-size: 13px;
+        font-weight: bold;
+        padding-bottom: 5px;
+    }
+
+    /* testo articolo */
+    .content-read-more p:nth-child(3) {
+        color: grey;
+        font-weight: 300;
+        padding-bottom: 10px;
+        line-height: 11px;
+        font-size: 10px;
+    }
+
+    /* data articolo */
+    .content-read-more p:nth-child(4) {
+        color: grey;
+        font-weight: 350;
+        font-size: 8px;
+        display: flex;
+    }
+
+    /* categoria articolo */
+    .content-read-more span:nth-child(1) {
+        background-color: rgba(215, 215, 215, 0.556);
+        padding: 5px 5px;
+        border-radius: 8px;
+        width: fit-content;
+    }
+
+    /* icona "salva" */
+    #test {
+        align-self: flex-end;
+    }
+
+    /* contenuto testo articolo */
+    .content-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ----------------------- ASIDE ----------------------- */
+    button {
+        background-color: white;
+        border: 1px solid rgba(145, 145, 145, 0.765);
+        color: rgb(151, 150, 150);
+        padding: 6px 8px;
+        margin: 5px 5px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .aside {
+        width: 40%;
+        margin: 0 80px;
+    }
+
+    .aside ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+        list-style-type: none;
+        color: lightgray;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 357px) {
+
+    .nav-bar {
+        background-color: #ffc017;
+        display: flex;
+        padding: 10px 50px 10px 50px;
+        border-bottom: 1px solid black;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* NAV BAR */
+    nav ol {
+        display: flex;
+        list-style-type: none;
+        font-size: 9px;
+    }
+
+    /* DISTANZA INTERNA NAV BAR */
+    nav li {
+        padding: 5px;
+    }
+
+    /* NAVIGARE TRA LE PAGINE EFFETTO */
+    nav li:hover {
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    /* ----------------------- HEAD SETTINGS ----------------------- */
+    .head {
+        background-color: #ffc017;
+        border-bottom: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        margin-bottom: 25px;
+    }
+
+    /* CONTENITORE PRINCIPALE */
+    .left {
+        padding-left: 50px;
+    }
+
+    /* TITOLO PAGINA */
+    h1 {
+        padding-top: 50px;
+        font-size: 38px;
+        letter-spacing: -1px;
+        padding-bottom: 20px;
+        font-weight: 400;
+    }
+
+    /* IMMAGINE SVG HEADING */
+    .svg-head {
+        position: relative;
+        left: 10px;
+    }
+
+    /* SOTTOTITOLO */
+    .left p {
+        font-size: 15px;
+        word-wrap: break-word;
+        font-family: "Roboto", sans-serif;
+        padding-bottom: 10px;
+    }
+
+    /* BOTTONE HEAD */
+    .left button {
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+        padding: 6px 23px;
+        margin-bottom: 30px;
+        border: none;
+    }
+
+    /* ----------------------- MAIN SETTINGS ----------------------- */
+    article p {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 9px;
+        font-weight: 500;
+        word-break: break-word;
+    }
+
+    article svg {
+        padding-right: 5px;
+    }
+
+    /* ARTICOLI */
+    /* prendo un articolo e lo formo esteticamente da fuori */
+    .article {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding-top: 5px;
+        width: 30%;
+    }
+
+    /* formatto il testo dentro */
+    /* numero bianco grigio articolo */
+    .number {
+        color: grey;
+        opacity: 0.4;
+        font-size: 20px;
+        padding-right: 10px;
+        font-weight: bold;
+    }
+
+    /* contenuto di testo articolo */
+    .content p {
+        padding-bottom: 7px;
+        padding-left: 5px;
+    }
+
+    /* logo piccolo articolo */
+    .content p img {
+        border-radius: 20px;
+        height: 15px;
+        padding-right: 5px;
+    }
+
+    /* scritta in grassetto articolo */
+    .content p:nth-child(2) {
+        font-weight: bold;
+        font-size: 10px;
+    }
+
+    /* data articolo */
+    .content p:nth-child(3) {
+        color: grey;
+    }
+
+    /* FORMATTAZIONE DISPOSIZIONE ARTICLE */
+    .articoli-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    /* FORMATTAZIONE DEL CONTENUTO PAGINA */
+    hr {
+        opacity: 0.2;
+        padding-bottom: 10px;
+    }
+
+    /* ----------------------- ARTICOLI SOTTO ----------------------- */
+    .read-more {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .content-read-more {
+        display: flex;
+        flex-direction: row;
+        word-wrap: break-word;
+        justify-content: space-between;
+        padding-bottom: 25px;
+        padding-left: 15px;
+        width: 95%;
+    }
+
+    /* logo autore */
+    .content-read-more img:nth-child(1) {
+        width: 15px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+    }
+
+    /* nome autore */
+    .content-read-more p:nth-child(1) {
+        padding-bottom: 3px;
+    }
+
+    /* immagine copertina */
+    .anteprima-articolo {
+        width: 30%;
+        padding-left: 20px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    /* titolo articolo */
+    .content-read-more p:nth-child(2) {
+        font-size: 13px;
+        font-weight: bold;
+        padding-bottom: 5px;
+    }
+
+    /* testo articolo */
+    .content-read-more p:nth-child(3) {
+        color: grey;
+        font-weight: 300;
+        padding-bottom: 10px;
+        line-height: 11px;
+        font-size: 10px;
+    }
+
+    /* data articolo */
+    .content-read-more p:nth-child(4) {
+        color: grey;
+        font-weight: 350;
+        font-size: 8px;
+        display: flex;
+    }
+
+    /* categoria articolo */
+    .content-read-more span:nth-child(1) {
+        background-color: rgba(215, 215, 215, 0.556);
+        padding: 5px 5px;
+        border-radius: 8px;
+        width: fit-content;
+    }
+
+    /* icona "salva" */
+    #test {
+        align-self: flex-end;
+    }
+
+    /* contenuto testo articolo */
+    .content-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ----------------------- ASIDE ----------------------- */
+    button {
+        background-color: white;
+        border: 1px solid rgba(145, 145, 145, 0.765);
+        color: rgb(151, 150, 150);
+        padding: 6px 8px;
+        margin: 5px 5px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .aside {
+        width: 40%;
+        margin: 0 80px;
+    }
+
+    .aside ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+        list-style-type: none;
+        color: lightgray;
+        margin-bottom: 20px;
+    }
+}
